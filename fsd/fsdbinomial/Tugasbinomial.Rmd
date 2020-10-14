@@ -1,0 +1,21 @@
+Dalam sebuah kotak terdapat 7 bola yang 3 diantaranya berwarna merah. Jika dari dalam kotak diambil bola satu per satu sampai dengan 3 kali, dimana setelah pengambilan, bola dikembalikan lagi ke dalam kotak untuk pengambilan berikutnya. Hitunglah peluang terambilnya bola merah sebanyak dua kali dan tiga kali.
+
+```{r}
+dbinom(x = 2, size = 3, prob = 3/7)
+```
+```{r}
+dbinom(x = 3, size = 3, prob = 3/7)
+```
+x<=5
+```{r}
+pbinom(q = 5, size = 3, prob = 3/7)
+```
+Percentile ke-75
+```{r}
+qbinom(p = 0.75, size = 3, prob = 3/7)
+```
+Simulasi 50 binomial random variabel
+```{r}
+rbinom(n = 50, size = 3, prob = 3/7)
+```
+
